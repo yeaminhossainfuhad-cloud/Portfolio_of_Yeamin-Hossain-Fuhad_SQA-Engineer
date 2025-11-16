@@ -314,7 +314,23 @@
         .timeline-item:nth-child(even)::after {
             left: -10px;
         }
+        
+        .point {
+          position: relative;
+          padding-left: 18px; /* space for bullet */
+          text-indent: -6px; /* keeps 2nd line aligned */
+          margin: 6px 0;
+        }
 
+        .point::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 18px;
+          color: #4A77FF; /* optional, match your theme */
+        }
+        
         /* Skills Section */
         .skills-container {
             display: grid;
@@ -668,9 +684,10 @@
                         <h3>IT Support Technician</h3>
                         <h4>Popular Diagnostic Centre Dhamnondi, Head Office</h4>
                         <p>December 2023 – Now</p>
-                        <p>• Provide technical support for hardware, software, and network systems across multiple departments.</p>
-                        <p>• Diagnose and resolve IT issues to ensure smooth daily operations and minimal downtime.</p>
-                        <p>• Install, configure, and maintain computer systems, printers and network equipment.</p>
+                        <p class="point">Provide technical support for hardware, software, and network systems across multiple departments.</p>
+                        <p class="point">Diagnose and resolve IT issues to ensure smooth daily operations and minimal downtime.</p>
+                        <p class="point">Install, configure, and maintain computer systems, printers and network equipment.</p>
+
                     </div>
                 </div>
                 <div class="timeline-item">
