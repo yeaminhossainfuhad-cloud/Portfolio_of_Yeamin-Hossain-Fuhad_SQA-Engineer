@@ -353,9 +353,9 @@
         }
 
         .skill-list {
-            display: flex;
-            flex-wrap: row;
-            gap: 0.8rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+            gap: 0.8rem; 
         }
 
         .skill-item {
