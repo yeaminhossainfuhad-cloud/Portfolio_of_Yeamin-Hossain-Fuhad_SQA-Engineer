@@ -618,12 +618,34 @@
                 </div>
                 <div class="hero-text">
                     <h1>MD YEAMIN HOSSAIN FUHAD</h1>
-                    <h2>JUNIOR SQA ENGINEER</h2>
+                    <h2 id="jobTitle" class="job-title">JUNIOR SQA ENGINEER</h2>
                     <p>Software Quality Assurance Engineer with experience in testing IOS, Android, and Web applications. Skilled in testing e-commerce, healthcare, and multimedia projects.</p>
                     <a href="#contact" class="btn">Get In Touch</a>
                     <a href="image/_Md Yeamin Hossain Fuhad_Intern.pdf" download="MD_Yeamin_Hossain_Fuhad_CV.pdf" class="btn">Resume  <i class="fa-solid fa-download"></i></a>
                 </div>
-                
+                <script>
+                    // List of job titles
+                    const jobTitles = [
+                        "JUNIOR SQA ENGINEER",
+                        "SOFTWARE TESTER",
+                        "QA AUTOMATION ENGINEER",
+                        "QA SPECIALIST",
+                        "IT Support Engineer"
+                        "Python Developer"
+                    ];
+            
+                    let currentIndex = 0;
+            
+                    // Function to change the job title
+                    function changeJobTitle() {
+                        const jobTitleElement = document.getElementById('jobTitle');
+                        currentIndex = (currentIndex + 1) % jobTitles.length; // Loop back to first title after the last one
+                        jobTitleElement.textContent = jobTitles[currentIndex];
+                    }
+            
+                    // Change job title every 3 seconds
+                    setInterval(changeJobTitle, 3000); // 3000 ms = 3 seconds
+                </script>
             </div>
         </div>
     </section>
