@@ -574,6 +574,7 @@
             }
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -618,7 +619,22 @@
                 </div>
                 <div class="hero-text">
                     <h1>MD YEAMIN HOSSAIN FUHAD</h1>
-                    <h2><span class="typed" data-typed-items="Junior SQA Engineer, Python Developer, IT Support Engineer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></h2>
+                    <h2>
+                      <span id="typed"></span>
+                    </h2>
+                    <script>
+                    var typed = new Typed('#typed', {
+                        strings: [
+                            "Junior SQA Engineer",
+                            "Python Developer",
+                            "IT Support Engineer"
+                        ],
+                        typeSpeed: 60,
+                        backSpeed: 40,
+                        loop: true
+                    });
+                    </script>
+
                     <p>Software Quality Assurance Engineer with experience in testing IOS, Android, and Web applications. Skilled in testing e-commerce, healthcare, and multimedia projects.</p>
                     <a href="#contact" class="btn">Get In Touch</a>
                     <a href="image/_Md Yeamin Hossain Fuhad_Intern.pdf" download="MD_Yeamin_Hossain_Fuhad_CV.pdf" class="btn">Resume  <i class="fa-solid fa-download"></i></a>
