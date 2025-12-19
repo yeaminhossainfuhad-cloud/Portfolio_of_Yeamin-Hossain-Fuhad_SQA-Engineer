@@ -453,32 +453,15 @@
             color: var(--primary);
         }
 
-      /* Container to handle the spacing between logos */
-        .social-links-container {
-            display: flex;       /* Aligns icons in a row */
-            gap: 15px;          /* This creates the perfect space BETWEEN the logos */
-            margin-top: 20px;   /* Space between the phone number and logos */
-            align-items: center;
+         .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #333;
+            font-size: 24px;
+            transition: color 0.3s;
         }
-        
-        /* Creating the circular background seen in your image */
-        .social-circle {
-            display: flex;
-            justify-content: center; /* Centers icon horizontally */
-            align-items: center;     /* Centers icon vertically */
-            width: 40px;            /* Size of the circle */
-            height: 40px;           /* Size of the circle */
-            background-color: #e9ecef; /* The light gray color from your image */
-            border-radius: 50%;     /* Makes it a perfect circle */
-            text-decoration: none;
-            color: #333;            /* Icon color */
-            transition: 0.3s;       /* Smooth transition for hover */
-        }
-        
-        /* Hover effect for a professional feel */
-        .social-circle:hover {
-            background-color: #007bff; /* Changes to blue on hover */
-            color: white;
+        .social-icons a:hover {
+          color: #007bff; /* Your brand color */
         }
         /* Footer */
         footer {
