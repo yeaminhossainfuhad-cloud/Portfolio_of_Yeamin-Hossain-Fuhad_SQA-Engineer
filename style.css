@@ -137,9 +137,8 @@
             max-width: 280px;        
             height: auto;            
             
-            border-radius: 10px;
+            border-radius: 5px;
             object-fit: contain;
-            border: 5px solid #4a6fa5;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
 
