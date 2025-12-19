@@ -130,8 +130,8 @@
         .hero-image {
             flex: 1;
             display: flex;  
-            justify-content: flex-center;
-            padding: 0 auto; 
+            justify-content: center; 
+            align-items: center;
         }
 
       .profile-img {
