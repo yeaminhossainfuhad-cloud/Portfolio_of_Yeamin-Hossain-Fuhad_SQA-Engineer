@@ -133,8 +133,8 @@
         }
 
         .profile-img {
-            width: auto;
-            height: auto;
+            width: 30;
+            height: 50;
             border-radius: 10px;  /* Optional: keeps the corners slightly rounded */
             object-fit: contain;  
             border: 5px solid #4a6fa5;
