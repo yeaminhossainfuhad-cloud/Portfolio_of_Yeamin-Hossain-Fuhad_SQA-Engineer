@@ -131,7 +131,7 @@
             flex: 1;
             display: flex;          
             justify-content: flex-end; 
-            padding: center;   
+            padding: 0 auto; 
         }
 
       .profile-img {
