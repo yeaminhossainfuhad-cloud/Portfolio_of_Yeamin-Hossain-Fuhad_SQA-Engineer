@@ -137,8 +137,7 @@
       .profile-img {
             width: 100%;            
             max-width: 280px;        
-            height: auto;            
-            right: -100%;
+            height: auto; 
             border-radius: 5px;
             object-fit: contain;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
