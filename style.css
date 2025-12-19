@@ -133,8 +133,7 @@
         }
 
         .profile-img {
-            width: 100%;
-            max-width: 300px;     /* CHANGED: Reduced from 400px to stop the overlap */
+            width: auto;
             height: auto;
             border-radius: 10px;  /* Optional: keeps the corners slightly rounded */
             object-fit: contain;  
