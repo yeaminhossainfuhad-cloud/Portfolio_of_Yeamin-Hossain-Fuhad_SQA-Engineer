@@ -135,9 +135,9 @@
         .profile-img {
             width: 100%;
             max-width: 400px;
-            height: auto;
-            border-radius: 10px;
-            object-fit: cover;
+            height: auto;           /* Keeps the original height/width ratio */
+            border-radius: 0;       /* CHANGED: 0 makes it a sharp rectangle. 10px makes it slightly rounded. */
+            object-fit: contain;    /* CHANGED: This ensures the image is never cropped */
             border: 5px solid #4a6fa5;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
