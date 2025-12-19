@@ -453,31 +453,32 @@
             color: var(--primary);
         }
 
-       .social-container {
-          display: flex;
-          gap: 15px;
-          margin-top: 20px;
+      /* Container to handle the spacing between logos */
+        .social-links-container {
+            display: flex;       /* Aligns icons in a row */
+            gap: 15px;          /* This creates the perfect space BETWEEN the logos */
+            margin-top: 20px;   /* Space between the phone number and logos */
+            align-items: center;
         }
         
-        .social-icon {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 45px;          /* Size of the circle */
-          height: 45px;         /* Size of the circle */
-          background-color: #e9ecef; /* Light gray from your screenshot */
-          border-radius: 50%;   /* Makes it a circle */
-          color: #333;          /* Icon color */
-          text-decoration: none;
-          font-size: 20px;      /* Size of the icon itself */
-          transition: all 0.3s ease;
+        /* Creating the circular background seen in your image */
+        .social-circle {
+            display: flex;
+            justify-content: center; /* Centers icon horizontally */
+            align-items: center;     /* Centers icon vertically */
+            width: 40px;            /* Size of the circle */
+            height: 40px;           /* Size of the circle */
+            background-color: #e9ecef; /* The light gray color from your image */
+            border-radius: 50%;     /* Makes it a perfect circle */
+            text-decoration: none;
+            color: #333;            /* Icon color */
+            transition: 0.3s;       /* Smooth transition for hover */
         }
         
-        /* Hover effects to add professional polish */
-        .social-icon:hover {
-          background-color: #007bff; /* Primary blue on hover */
-          color: #fff;               /* White icon on hover */
-          transform: translateY(-3px); /* Slight lift effect */
+        /* Hover effect for a professional feel */
+        .social-circle:hover {
+            background-color: #007bff; /* Changes to blue on hover */
+            color: white;
         }
         /* Footer */
         footer {
