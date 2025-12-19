@@ -129,7 +129,8 @@
 
         .hero-image {
             flex: 1;
-            display: flex;     
+            display: flex;  
+            justify-content: flex-center;
             padding: 0 auto; 
         }
 
