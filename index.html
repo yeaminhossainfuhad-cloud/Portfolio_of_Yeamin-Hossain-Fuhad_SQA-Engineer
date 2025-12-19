@@ -453,29 +453,32 @@
             color: var(--primary);
         }
 
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
+       .social-container {
+          display: flex;
+          gap: 15px;
+          margin-top: 20px;
         }
-
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: var(--gray);
-            border-radius: 50%;
-            color: var(--dark);
-            transition: var(--transition);
+        
+        .social-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 45px;          /* Size of the circle */
+          height: 45px;         /* Size of the circle */
+          background-color: #e9ecef; /* Light gray from your screenshot */
+          border-radius: 50%;   /* Makes it a circle */
+          color: #333;          /* Icon color */
+          text-decoration: none;
+          font-size: 20px;      /* Size of the icon itself */
+          transition: all 0.3s ease;
         }
-
-        .social-links a:hover {
-            background-color: var(--primary);
-            color: white;
+        
+        /* Hover effects to add professional polish */
+        .social-icon:hover {
+          background-color: #007bff; /* Primary blue on hover */
+          color: #fff;               /* White icon on hover */
+          transform: translateY(-3px); /* Slight lift effect */
         }
-
         /* Footer */
         footer {
             background-color: var(--dark);
